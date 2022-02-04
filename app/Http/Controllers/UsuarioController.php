@@ -11,6 +11,7 @@ class UsuarioController extends Controller
     public function index()
     {
         $usuarios = new UsuarioModel();
+        //listar testimonios
         $usuario = $usuarios->getAllUsuarioTestimonio();
 
         return $usuario->all();
